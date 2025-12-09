@@ -6,7 +6,6 @@ import Jwt from "jsonwebtoken";
 export function proxy(req: NextRequest) {
 	const token = req.cookies.get("token")?.value;
 
-	// If no token → redirect to login
 	if (!token) {
 		return NextResponse.redirect(new URL("/admin/login/", req.url));
 	}
@@ -21,11 +20,8 @@ export function proxy(req: NextRequest) {
 	}
 }
 
-/**
- * Protect all /admin/* pages EXCEPT /admin/login
- */
 export const config = {
 	matcher: [
-		"/admin/dashboard:path*",    // Protect admin
+		"/admin/dashboard:path*",    // Protect admin dashboard
 	]
 };
