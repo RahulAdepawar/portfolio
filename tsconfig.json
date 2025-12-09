@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "emails/thanku_email.js", "lib/resend.js", "components/admin/Sidebar.jsx", "app/admin/dashboard/page.tsx"  ],
   "exclude": ["node_modules"]
 }
