@@ -59,7 +59,7 @@ export default function Contact() {
 		<>
 			<Navbar />
 			{/* Form Section */}
-			<div className="max-w-xl mx-auto p-6 sm:p-8">
+			<div className="max-w-xl mx-auto p-6 sm:p-8" style={{paddingTop: "5rem"}}>
 				<h1 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
 					Contact Me
 				</h1>
