@@ -21,7 +21,7 @@ export async function POST(request) {
 		if (contactInfo.email) {
 			const sender_email = contactInfo.email;
 			console.log("try to sending Email");
-			const html_content = thankyou_email({ name, sender_email, message });
+			const html_content = thankyou_email({ name, email, message });
 
 			await resend_email.emails.send({
 				from: 'onboarding@resend.dev',

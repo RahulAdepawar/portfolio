@@ -32,10 +32,8 @@ export default function thankyou_email({ name, email, message }) {
                     <p>We'll review your inquiry and get back to you at <strong>${email}</strong> as soon as possible, typically within 24-48 hours. If you have any additional details, feel free to reply to this email.</p>
                     <p>In the meantime, feel free to explore more on our website or follow us for updates.</p>
                     <p>Best regards,<br>
-                    [Your Name/Company]<br>
-                    [Your Position]<br>
-                    [Your Contact Info]<br>
-                    [Your Website]</p>
+                    Rahul Adepawar<br>
+                    Software Developer<br>
                 </div>
                 <div class="footer">
                     <p>This is an automated response. Please do not reply directly to this email.</p>
