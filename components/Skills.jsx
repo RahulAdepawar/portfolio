@@ -1,30 +1,31 @@
-
 const sections = [
-	{
-		title: "Frontend Development",
-		skills: ["HTML", "CSS", "JavaScript", "Next.js"],
-	},
-	{
-		title: "Backend Development",
-		skills: ["Node.js", "Express.js", "PHP"],
-	},
-	{
-		title: "Databases",
-		skills: ["MySQL", "Redis"],
-	},
-	{
-		title: "Tools & Technologies",
-		skills: ["Git", "Postman", "REST APIs", "Docker"],
-	},
-	{
-		title: "Other Skills",
-		skills: [
-			"Problem Solving",
-			"Clean Code Practices",
-			"Performance Optimization",
-			"Debugging & Troubleshooting",
-		],
-	},
+  {
+    title: "Frontend Development",
+    skills: ["HTML", "CSS", "JavaScript", "TypeScript", "React.js", "Next.js"],
+  },
+  {
+    title: "Backend Development",
+    skills: ["Node.js", "Express.js", "PHP", "WebSocket (Socket.IO)"],
+  },
+  {
+    title: "Databases",
+    skills: ["MySQL", "PostgreSQL", "MongoDB", "Redis"],
+  },
+  {
+    title: "Tools & Technologies",
+    skills: ["Git", "Postman", "REST APIs", "Docker"],
+  },
+  {
+    title: "Other Skills",
+    skills: [
+      "Analytical Thinking",
+      "Problem Solving",
+      "Clean Code Practices",
+      "Performance Optimization",
+      "Debugging & Troubleshooting",
+      "Team Collaboration",
+    ],
+  },
 ];
 
 export default function Skills() {

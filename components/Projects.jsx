@@ -2,6 +2,22 @@
 
 const project_details = [
 	{
+		"title": "Real-Time Chat Application",
+		"description": [
+			"Developed a full-stack real-time chat application using React.js, Node.js, Express.js, Socket.IO, PostgreSQL, and TypeScript.",
+			"Built a responsive and interactive frontend with React.js and TypeScript for better maintainability and type safety.",
+			"Implemented RESTful APIs with Node.js and Express.js for user authentication, message handling, and chat management.",
+			"Designed and managed PostgreSQL database schemas for users, conversations, and message history.",
+			"Enabled real-time message synchronization across multiple clients without page refresh using WebSocket (Socket.IO).",
+			"Applied modular architecture, reusable components, and clean code practices for scalability and maintainability.",
+			"Hosted frontend on Netlify and backend on Render for seamless deployment."
+		],
+		"links": {
+			"github": "https://github.com/RahulAdepawar/chatapp.git",
+			"live": "https://leafy-stroopwafel-579473.netlify.app/"
+		}
+	},
+	{
 		"title": "Drag-and-Drop ID Card Designer",
 		"description": [
 			"Built a fully customizable ID card designer using Konva.js, allowing users to drag, drop, resize, and position text, images, and shapes on a live canvas",
@@ -10,16 +26,6 @@ const project_details = [
 			"Added export functionality to save final card designs easily",
 		]
 	},
-	{
-		"title": "Kalash Barcode Management System",
-		"description": [
-			"Customized the dispatch workflow to optimize logistics and shipping operations.",
-			"Developed PDF generation for challans and invoices using Node.js.",
-			"Built Excel report generation for stock data, challan reports, and invoice summaries.",
-			"Integrated E-way Bill API, enabling automated e-way bill creation, validation, and seamless communication with the EWB portal.",
-			"Improved system reliability and operational speed for warehouse workflows."
-		]
-	}
 ]
 
 export default function projects() {
@@ -48,11 +54,17 @@ export default function projects() {
 										</li>
 									))}
 								</ul>
+								{project.links && (
+									<p className="mt-2 text-sm text-indigo-600 font-medium">
+										<a href={project.links.github} target="_blank" rel="noopener noreferrer">GitHub</a> |
+										<a href={project.links.live} target="_blank" rel="noopener noreferrer">Live Demo</a>
+									</p>
+								)}
 							</div>
 						))}
 					</div>
 				</div>
-			</section>
+			</section >
 		</>
 	);
 }; 

@@ -39,10 +39,14 @@ export default function Main() {
 								loop={false}
 							/> */}
 					</h2>
-
-					<button className="mt-5 bg-indigo-600 text-white px-5 py-2 rounded-md hover:bg-indigo-700 transition">
+					<a
+						href="/RAHUL_ADEPAWAR_9168558143.pdf"
+						download="Rahul_Adepawar_Resume.pdf"
+						className="mt-5 bg-gray-800 text-white px-5 py-2 rounded-md hover:bg-gray-900 transition inline-block text-center"
+					>
 						My Resume
-					</button>
+					</a>
+
 				</div>
 
 				{/* Right Image */}
